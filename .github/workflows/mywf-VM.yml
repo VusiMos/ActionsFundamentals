@@ -1,0 +1,11 @@
+name: My WF VM
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  Build:
+     runs-on: ubuntu-latest
+     
+     steps:
+       - run: echo "hello World"
